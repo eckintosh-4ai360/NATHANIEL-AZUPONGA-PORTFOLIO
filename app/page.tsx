@@ -318,6 +318,62 @@ export default function Portfolio() {
         </div>
       </section>
 
+            {/* Contact Section */}
+      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Let&apos;s Connect</h2>
+          <p className="text-lg text-foreground/80 mb-12 leading-relaxed">
+            I&apos;m always interested in collaborating on research, discussing AI applications in healthcare, or exploring new opportunities. Feel free to reach out!
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+            <a 
+              href="mailto:nathanael.azuponga@gmail.com"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg transition-colors font-medium"
+            >
+              <Mail size={18} />
+              nathanael.azuponga@gmail.com
+            </a>
+            <a 
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-border hover:bg-secondary rounded-lg transition-colors"
+            >
+              <Linkedin size={18} />
+              LinkedIn
+            </a>
+            <a 
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-border hover:bg-secondary rounded-lg transition-colors"
+            >
+              <Github size={18} />
+              GitHub
+            </a>
+          </div>
+
+          <div className="p-6 bg-secondary rounded-lg border border-border">
+            <p className="text-sm text-secondary-foreground mb-4">Additional Information</p>
+            <div className="grid md:grid-cols-3 gap-4 text-center">
+              <div>
+                <p className="text-2xl font-bold text-accent">6+</p>
+                <p className="text-xs text-secondary-foreground">Years Experience</p>
+              </div>
+              <div>
+                <p className="text-2xl font-bold text-accent">2</p>
+                <p className="text-xs text-secondary-foreground">Publications</p>
+              </div>
+              <div>
+                <p className="text-2xl font-bold text-accent">10+</p>
+                <p className="text-xs text-secondary-foreground">Students Mentored</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

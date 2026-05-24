@@ -238,6 +238,86 @@ export default function Portfolio() {
         </div>
       </section>
 
+      
+      {/* Research & Projects Section */}
+      <section id="research" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12">Research & Projects</h2>
+
+          {/* Featured Research */}
+          <div className="mb-16">
+            <h3 className="text-xl font-semibold mb-8 text-accent">Featured Research</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  title: 'Multi-attention Framework for Liver Tumor Segmentation',
+                  journal: 'Applied Computational and Soft Computing (2024)',
+                  description: 'Developed hybrid ResUNet architecture with self-attention mechanisms for improved liver tumor segmentation accuracy.',
+                  impact: 'Published in peer-reviewed journal',
+                },
+                {
+                  title: 'Heart Disease Prediction using BPSO-PSO Optimization',
+                  journal: 'ICICC-2026 Conference',
+                  description: 'Created optimized multilayer perceptron framework combining particle swarm optimization for enhanced predictive accuracy.',
+                  impact: 'Accepted for presentation',
+                },
+              ].map((paper, idx) => (
+                <div key={idx} className="p-6 bg-background rounded-lg border border-border hover:border-accent transition-colors">
+                  <h4 className="text-lg font-semibold mb-2">{paper.title}</h4>
+                  <p className="text-accent text-sm mb-3">{paper.journal}</p>
+                  <p className="text-foreground/80 text-sm mb-3 leading-relaxed">{paper.description}</p>
+                  <p className="text-xs text-muted-foreground flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                    {paper.impact}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Notable Projects */}
+          <div>
+            <h3 className="text-xl font-semibold mb-8 text-accent">Notable Projects</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  title: 'Gemini Factuality Evaluations',
+                  description: 'Developed methodologies to evaluate and enhance factual correctness of LLM outputs using decomposition and grounding benchmarks.',
+                  tech: ['Python', 'LLMs', 'Evaluation Metrics'],
+                },
+                {
+                  title: 'Risk Management System',
+                  description: 'Designed and managed distributed risk management systems using Scala, Python, and Java with event-driven architecture.',
+                  tech: ['Scala', 'Python', 'Kafka', 'Akka'],
+                },
+                {
+                  title: 'Medical Device for Postpartum Hemorrhage',
+                  description: 'Designed assistive medical device with detailed 3D models and biocompatibility analysis for emergency healthcare.',
+                  tech: ['Solid Edge', 'Biomedical Engineering'],
+                },
+                {
+                  title: 'Assistive Tool for Vision-Impaired',
+                  description: 'Developed technology solution to help visually impaired persons manage medication schedules effectively.',
+                  tech: ['IoT', 'Hardware Integration'],
+                },
+              ].map((project, idx) => (
+                <div key={idx} className="p-6 bg-background rounded-lg border border-border hover:border-accent transition-colors">
+                  <h4 className="text-lg font-semibold mb-2">{project.title}</h4>
+                  <p className="text-foreground/80 text-sm mb-4 leading-relaxed">{project.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((t) => (
+                      <span key={t} className="text-xs bg-accent text-accent-foreground px-2 py-1 rounded border border-accent/50">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

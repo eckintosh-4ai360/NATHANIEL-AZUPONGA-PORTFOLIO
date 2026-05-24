@@ -374,6 +374,15 @@ export default function Portfolio() {
         </div>
       </section>
 
+            {/* Footer */}
+      <footer className="border-t border-border py-8 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-sm text-muted-foreground">
+            © 2026 Nathanael Azuponga. All rights reserved. 
+          </p>
+        </div>
+      </footer>
+
     </div>
   );
 }

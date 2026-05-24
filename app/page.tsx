@@ -148,6 +148,95 @@ export default function Portfolio() {
         </div>
       </section>
 
+ 
+      {/* Experience Section */}
+      <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12">Experience & Education</h2>
+          
+          {/* Work Experience */}
+          <div className="mb-16">
+            <h3 className="text-xl font-semibold mb-8 text-accent">Work Experience</h3>
+            <div className="space-y-8">
+              {[
+                {
+                  role: 'Senior Software System Analyst',
+                  company: 'Spagad Technologies Limited',
+                  period: '2026 - Present',
+                  location: 'Ghana',
+                  description: 'Design and develop software applications supporting core business operations. Manage user incidents, configure systems for optimal performance, and lead system administration and security initiatives.',
+                },
+                {
+                  role: 'AI Data Trainer',
+                  company: 'Invisible Technology Inc',
+                  period: '2024 - 2026',
+                  location: 'Remote',
+                  description: 'Trained large language models through annotation, labeling, and RLHF. Designed argumentation schemes and evaluated conversational AI systems for accuracy and alignment.',
+                },
+                {
+                  role: 'Software Engineer II',
+                  company: 'Turntabl Ghana Limited',
+                  period: '2021 - 2026',
+                  location: 'Ghana',
+                  description: 'Developed scalable risk management applications using Scala and C#. Built distributed microservices with Akka and Kafka, automated workflows with Python/Airflow (60% manual workload reduction), and designed RESTful APIs.',
+                },
+              ].map((job, idx) => (
+                <div key={idx} className="flex gap-6 pb-8 border-b border-border last:border-b-0 last:pb-0">
+                  <div className="flex flex-col items-center">
+                    <div className="w-3 h-3 rounded-full bg-accent mt-2"></div>
+                    {idx < 2 && <div className="w-0.5 h-24 bg-border mt-2"></div>}
+                  </div>
+                  <div className="pb-4">
+                    <h4 className="text-lg font-semibold">{job.role}</h4>
+                    <p className="text-accent text-sm">{job.company}</p>
+                    <p className="text-muted-foreground text-xs">{job.period} • {job.location}</p>
+                    <p className="text-foreground/80 text-sm mt-2 leading-relaxed">{job.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Education */}
+          <div>
+            <h3 className="text-xl font-semibold mb-8 text-accent">Education</h3>
+            <div className="space-y-8">
+              {[
+                {
+                  degree: 'MSc Computer Science',
+                  school: 'University of Ghana',
+                  period: 'August 2024',
+                  gpa: '3.67/4.00',
+                  thesis: 'Multi-attention ResUNet and modified U-Net for liver tumor segmentation',
+                  courses: 'Computer Vision, Data Structures & Algorithms, Research Methods',
+                },
+                {
+                  degree: 'BSc Biomedical Engineering',
+                  school: 'University of Ghana',
+                  period: 'July 2020',
+                  gpa: '3.76/4.00',
+                  thesis: 'Medical device for effective blood loss prevention in women',
+                  courses: 'Medical Imaging, Statistics, Tissue Engineering, Biomechanics',
+                },
+              ].map((edu, idx) => (
+                <div key={idx} className="flex gap-6 pb-8 border-b border-border last:border-b-0 last:pb-0">
+                  <div className="flex flex-col items-center">
+                    <div className="w-3 h-3 rounded-full bg-accent mt-2"></div>
+                    {idx === 0 && <div className="w-0.5 h-32 bg-border mt-2"></div>}
+                  </div>
+                  <div className="pb-4">
+                    <h4 className="text-lg font-semibold">{edu.degree}</h4>
+                    <p className="text-accent text-sm">{edu.school}</p>
+                    <p className="text-muted-foreground text-xs">{edu.period} • GPA: {edu.gpa}</p>
+                    <p className="text-foreground/80 text-sm mt-2"><strong>Thesis:</strong> {edu.thesis}</p>
+                    <p className="text-foreground/80 text-sm"><strong>Key Courses:</strong> {edu.courses}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
   );

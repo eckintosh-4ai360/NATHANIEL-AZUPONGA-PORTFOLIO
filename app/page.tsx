@@ -75,8 +75,8 @@ export default function Portfolio() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="space-y-6">
               <div className="space-y-3">
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-balance">
-                  Nathanael Azuponga
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance">
+                  Nathanael A. Azuponga
                 </h1>
                 <p className="text-xl sm:text-2xl text-muted-foreground font-light">
                   AI Researcher & Software Engineer
@@ -385,7 +385,7 @@ export default function Portfolio() {
       <footer className="border-t border-border py-8 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-sm text-muted-foreground">
-            © 2026 Nathanael Azuponga. All rights reserved. 
+            © 2026 Nathanael A. Azuponga. All rights reserved. 
           </p>
         </div>
       </footer>

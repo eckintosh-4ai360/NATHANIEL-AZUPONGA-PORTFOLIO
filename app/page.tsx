@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 export default function Portfolio() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -71,7 +72,8 @@ export default function Portfolio() {
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-12 items-bottom justify-between">
+          <div className="space-y-6">
           <div className="space-y-3">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-balance">
               Nathanael Azuponga
@@ -98,6 +100,12 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
+        <div>
+          <Image src="/picture.jpg" alt="Hero" width={300} height={300} className="rounded-full shadow-lg " />
+        </div>
+        </div>
+        
+
       </section>
 
        {/* About Section */}
@@ -206,7 +214,7 @@ export default function Portfolio() {
                   degree: 'MSc Computer Science',
                   school: 'University of Ghana',
                   period: 'August 2024',
-                  gpa: '3.67/4.00',
+                
                   thesis: 'Multi-attention ResUNet and modified U-Net for liver tumor segmentation',
                   courses: 'Computer Vision, Data Structures & Algorithms, Research Methods',
                 },
@@ -214,7 +222,7 @@ export default function Portfolio() {
                   degree: 'BSc Biomedical Engineering',
                   school: 'University of Ghana',
                   period: 'July 2020',
-                  gpa: '3.76/4.00',
+              
                   thesis: 'Medical device for effective blood loss prevention in women',
                   courses: 'Medical Imaging, Statistics, Tissue Engineering, Biomechanics',
                 },
@@ -227,7 +235,7 @@ export default function Portfolio() {
                   <div className="pb-4">
                     <h4 className="text-lg font-semibold">{edu.degree}</h4>
                     <p className="text-accent text-sm">{edu.school}</p>
-                    <p className="text-muted-foreground text-xs">{edu.period} • GPA: {edu.gpa}</p>
+                   
                     <p className="text-foreground/80 text-sm mt-2"><strong>Thesis:</strong> {edu.thesis}</p>
                     <p className="text-foreground/80 text-sm"><strong>Key Courses:</strong> {edu.courses}</p>
                   </div>
@@ -332,7 +340,7 @@ export default function Portfolio() {
               className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg transition-colors font-medium"
             >
               <Mail size={18} />
-              nathanael.azuponga@gmail.com
+             
             </a>
             <a 
               href="https://linkedin.com"

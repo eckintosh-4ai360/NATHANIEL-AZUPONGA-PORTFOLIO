@@ -71,42 +71,45 @@ export default function Portfolio() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-bottom justify-between">
-          <div className="space-y-6">
-          <div className="space-y-3">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-balance">
-              Nathanael Azuponga
-            </h1>
-            <p className="text-xl sm:text-2xl text-muted-foreground font-light">
-              AI Researcher & Software Engineer
-            </p>
-          </div>
-          <p className="text-lg text-foreground/80 max-w-2xl leading-relaxed">
-            Exploring generative AI for medical diagnosis and disease prevention. Building scalable systems that combine deep learning with practical engineering.
-             Currently advancing Software Develo, University of Ghana.
-          </p>
-          <div className="flex flex-wrap gap-4 pt-4">
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
-            >
-              Get in Touch
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2 border border-border rounded-lg hover:bg-secondary transition-colors">
-              <Github size={18} />
-              GitHub
-            </a>
-          </div>
-        </div>
-        <div>
-          <Image src="/picture.jpg" alt="Hero" width={300} height={300} className="rounded-full shadow-lg " />
-        </div>
-        </div>
-        
+     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+    
+    <div className="space-y-6 max-w-2xl">
+      <div className="space-y-3">
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-balance">
+          Nathanael Azuponga
+        </h1>
 
-      </section>
+        <p className="text-xl sm:text-2xl text-muted-foreground font-light">
+          AI Researcher & Software Engineer
+        </p>
+
+        <p className="text-lg text-foreground/80 leading-relaxed">
+          Exploring generative AI for medical diagnosis and disease prevention.
+          Building scalable systems that combine deep learning with practical engineering.
+          Currently advancing Software Development, Spagad Technologies Ltd.
+        </p>
+
+        <div className="flex flex-wrap gap-4 pt-4">
+          <Button>
+            Get in Touch
+          </Button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <Image
+        src="/picture.jpg"
+        alt="Hero"
+        width={300}
+        height={300}
+        className="rounded-full shadow-lg"
+      />
+    </div>
+
+  </div>
+</section>
 
        {/* About Section */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
@@ -343,7 +346,7 @@ export default function Portfolio() {
              
             </a>
             <a 
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/nathanael-ayirebaje-azuponga-5987001a3/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 border border-border hover:bg-secondary rounded-lg transition-colors"
@@ -352,7 +355,7 @@ export default function Portfolio() {
               LinkedIn
             </a>
             <a 
-              href="https://github.com"
+              href="https://github.com/Nathan-Azuponga"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 border border-border hover:bg-secondary rounded-lg transition-colors"

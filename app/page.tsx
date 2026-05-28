@@ -140,10 +140,10 @@ export default function Portfolio() {
               <div className="p-6 bg-secondary rounded-lg border border-border">
                 <h3 className="font-semibold mb-4 flex items-center gap-2 text-secondary-foreground">
                   <span className="w-1 h-6 bg-accent rounded-full"></span>
-                  Technical Skills
+                  Soft Skills
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Python', 'Scala', 'C#', 'Java', 'TensorFlow', 'Keras', 'OpenCV', 'FastAPI', 'Docker', 'AWS', 'Git'].map((skill) => (
+                  {['Team player', 'Analytical thinker', 'Good communicator', 'Problem-solving mindset', 'Leadership', 'Self-motivated', 'Stress Management'].map((skill) => (
                     <span key={skill} className="text-xs bg-accent text-accent-foreground px-3 py-1 rounded-full border border-accent/50">
                       {skill}
                     </span>
@@ -152,6 +152,45 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
+        </div>
+        <hr className="my-16 border-border" />
+          <div className="text-2xl max-w-6xl mx-auto mt-12 font-bold mb-6">
+              <h2 className="text-2xl mx-2 mt-12 font-bold mb-6">Technical Skills</h2>
+          </div>
+        <div className="max-w-6xl flex mx-auto mt-12">
+           <div className="p-6 bg-secondary mx-2 rounded-lg border border-border">
+                <h3 className="font-semibold mb-4 flex items-center gap-2 text-secondary-foreground">
+                  <span className="w-1 h-6 bg-accent rounded-full"></span>
+                  • Medical Imaging
+                </h3>
+                <ul className="space-y-2 text-sm text-secondary-foreground">
+                  <li>
+                    Image Segmentation and Reconstruction, 
+                    Computer-Aided Diagnosis, 
+                    OpenCV, scikit-image, 
+                    Biomedical Device Design</li>
+                </ul>
+            </div>
+           <div className="p-6 bg-secondary mx-2 rounded-lg border border-border">
+                <h3 className="font-semibold mb-4 flex items-center gap-2 text-secondary-foreground">
+                  <span className="w-1 h-6 bg-accent rounded-full"></span>
+                  • Deep Learning
+                </h3>
+                <ul className="space-y-2 text-sm text-secondary-foreground">
+                  <li>  
+              TensorFlow, Keras, Natural Language Processing (NLP), Transformer Models, Encoder-Decoder Architecture, Retrieval-Augmented Generation (RAG)</li>
+                </ul>
+            </div>
+           <div className="p-6 bg-secondary mx-2 rounded-lg border border-border">
+                <h3 className="font-semibold mb-4 flex items-center gap-2 text-secondary-foreground">
+                  <span className="w-1 h-6 bg-accent rounded-full"></span>
+                  • Software Engineering
+                </h3>
+                <ul className="space-y-2 text-sm text-secondary-foreground">
+                  <li>
+              Scala, Java, Python, C#, API Design, Microservices, Apache Airflow, Git & GitHub, Bitbucket, Docker, Postman, GraphQL, Cloud Computing, JIRA, LaTeX, Embedded Systems</li>
+                </ul>
+            </div>
         </div>
       </section>
 

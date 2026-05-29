@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Nathanael Azuponga | AI & Software Engineer',
-  description: 'Portfolio of Nathanael Azuponga - AI researcher, medical imaging specialist, and software engineer with expertise in generative AI, deep learning, and full-stack development.',
+  description: 'Portfolio of Nathanael A. Azuponga - AI researcher, medical imaging specialist, and software engineer with expertise in generative AI, deep learning, and full-stack development.',
   icons: {
     icon: [
       {

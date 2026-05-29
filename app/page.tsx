@@ -17,6 +17,15 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {mobileMenuOpen && (
+        <button
+          type="button"
+          aria-label="Close mobile menu"
+          className="fixed inset-0 z-40 cursor-default bg-transparent md:hidden"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
+
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
